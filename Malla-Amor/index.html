@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla de mi princesa 💖</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌸 Malla de mi princesa 💖</h1>
+    <p>Carrera: Enfermería | Universidad Andrés Bello</p>
+    <div class="decoraciones">
+      <img src="https://media.tenor.com/y0M_CSDj4JkAAAAi/hello-kitty.gif" alt="Hello Kitty" class="iconito">
+      <img src="https://media.tenor.com/klqwMQBCSo8AAAAi/kuromi.gif" alt="Kuromi" class="iconito">
+    </div>
+  </header>
+
+  <section class="semestre">
+    <h2>4° Semestre</h2>
+    <div class="ramos">
+      <div class="ramo" onclick="toggleEstado(this)">Fisiopatología</div>
+      <div class="ramo" onclick="toggleEstado(this)">Farmacología General</div>
+      <div class="ramo" onclick="toggleEstado(this)">Salud Pública II</div>
+      <div class="ramo" onclick="toggleEstado(this)">Bases de Enfermería en Salud Familiar y Comunitaria</div>
+      <div class="ramo" onclick="toggleEstado(this)">Cuidado de Enfermería en Adulto y Adulto Mayor</div>
+      <div class="ramo" onclick="toggleEstado(this)">Inglés II</div>
+    </div>
+  </section>
+
+  <section class="motivacion">
+    <h2>✨ Un mensajito de motivación para usted.</h2>
+    <p id="mensaje">Aprete en el botón para recibir motivación 💌</p>
+    <button onclick="mostrarMotivacion()">💖 Dame motivación</button>
+  </section>
+<section class="calculadora">
+  <h2>🧮 Calculadora de notas ponderadas para mi bebe</h2>
+
+  <div id="notas-container"></div>
+
+  <button type="button" onclick="agregarNota()">Agregar nota</button>
+  <button type="button" onclick="calcularPromedio()">Calcular promedio ponderado</button>
+
+  <p id="resultadoPromedio">Su promedio aparecerá aquí ✨</p>
+</section>
+
+
+<section class="barra-amor">
+  <h2>💗 Nivel de amor hacia mi princesa</h2>
+  <div class="barra-container">
+    <div class="barra" id="barraAmor">1000%</div>
+  </div>
+</section>
+
+  <footer>
+    <p>Hecho con amor 🩷 por se persona favorita (ESPERO) ñau 🫶</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

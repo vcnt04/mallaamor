@@ -1,0 +1,203 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe6f2;
+  color: #660033;
+  margin: 0;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #d63384;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.decoraciones {
+  margin-top: 1rem;
+}
+
+.iconito {
+  width: 60px;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+.semestre {
+  margin: 2rem 0;
+}
+
+.semestre h2 {
+  color: #c2185b;
+  border-bottom: 2px dashed #f48fb1;
+  padding-bottom: 5px;
+}
+
+.ramos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ramo {
+  background-color: #fff0f5;
+  border: 2px solid #ff99cc;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 2px 2px 6px #ffb6c1;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ramo:hover {
+  transform: scale(1.05);
+}
+
+.ramo.aprobado {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.ramo.en-curso {
+  background-color: #fff3cd;
+  border-color: #ffc107;
+  color: #856404;
+}
+
+.motivacion {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #ffe0f0;
+  border: 2px dashed #ff99cc;
+  border-radius: 12px;
+}
+
+.motivacion button {
+  background-color: #ff99cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.motivacion button:hover {
+  background-color: #e754a3;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.calculadora, .barra-amor {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #ffe0f0;
+  border: 2px dashed #ff99cc;
+  border-radius: 12px;
+}
+
+.calculadora input {
+  padding: 0.5rem;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ff99cc;
+  margin-top: 0.5rem;
+}
+
+.calculadora button {
+  background-color: #ff99cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+
+.calculadora button:hover {
+  background-color: #e754a3;
+}
+
+#resultadoPromedio {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #c2185b;
+}
+
+/* NUEVAS REGLAS para filas de nota y peso */
+.nota-row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nota-row input {
+  width: 80px;
+  padding: 0.4rem;
+  border: 1px solid #ff99cc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.nota-row button {
+  background-color: #ff99cc;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nota-row button:hover {
+  background-color: #e754a3;
+}
+
+.barra-container {
+  background-color: #fff0f5;
+  border: 2px solid #ff99cc;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+.barra {
+  background: linear-gradient(90deg, #ff66b2, #ff99cc, #ffb6c1);
+  color: white;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  font-weight: bold;
+  animation: barraAnimada 4s ease-in-out infinite alternate;
+  border-radius: 20px;
+}
+
+@keyframes barraAnimada {
+  0% { width: 80%; }
+  100% { width: 100%; }
+}
